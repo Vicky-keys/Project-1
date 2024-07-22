@@ -576,3 +576,231 @@ body{
     border-radius: 8px;
 }
 
+/* Responsive */
+@media screen and (max-width: 420px) {
+    .navbar{
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .hero-section .navbar .brand-name{
+        margin-left: 8%;
+        font-size: 30px;
+    }
+    .hero-section .navbar .brand-name img{
+        width: 60px;
+        object-fit: cover contain;
+    }
+    
+
+    .hero-section .navbar .links{
+        display: none;
+    }
+    .hero-section .navbar .hamburger{
+        display: block; 
+     }
+     .hero-section .navbar .sign{
+        display: none;
+     }
+
+     #icon{
+        display: block;
+        width: 30px;
+        right: 10px;
+     }
+     .sidebar{
+        left: 0;
+        display: block;
+     }
+     .hero-section .content{
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        margin-left: 0px;
+        margin-top: 40px;
+    }
+
+    .hero-section .content .description{
+        text-align: center;
+        margin-left: 0px;
+        margin-top: 80px;
+    }
+    .hero-section .content .description h1{
+        font-size: 30px;
+        margin-bottom: 10px;
+        margin-left: 0px;
+        
+    }
+
+    .hero-section .content .description p{
+        font-size: 20px;
+        padding: 5px;
+        margin-bottom: 10px;
+        color: lightgray;
+    }
+
+    .hero-section .content  a{
+        font-size: 20px;
+        margin-bottom: 10px;
+        padding: 10px;
+    }
+    .hero-section .content .box a{
+        font-size: 20px;
+        margin-bottom: 10px;
+        padding: 10px;
+    }
+
+    .hero-section .content .image{
+        width: 90%;
+        margin-bottom: 10px;
+    }
+
+    .hero-section .content .image img{
+        width: 100%;
+    }
+    
+    #features h1{
+        font-size: 35px;
+    }
+
+    #features h2{
+        font-size: 25px;
+    }
+
+    .features{
+        flex-basis: 100%;
+    }
+  
+    .features-image{
+        display: none;
+    }
+
+    .features-image img{
+        width: 100%;
+    }
+
+    .features-icon{
+        width: 50px;
+        height: 60px;
+        padding: 5px;
+        border-radius: 8px;
+        color: var(--blue);
+        border: 1px solid var(--blue);
+        font-size: 30px;
+        line-height: 50px;
+        display: none;
+    
+    }
+    
+    .features-text p{
+        padding: 0 10px;
+        font-family: 'Times New Roman', Times, serif;
+        text-align: left;
+    }
+
+    #services h1{
+        font-size: 35px;
+    }
+
+    #services h2{
+        font-size: 25px;
+    }
+    .services-container{
+        display: flex;
+        flex-direction: column;
+        margin: 25px 27px;
+    }
+
+    .services-container .services-icon i{
+        margin-top: 10px;
+    }
+    .services-container .service{
+        width: 270px;
+        height: 270px;
+        border-radius: 8px;
+        background: var(--white-color);
+        box-shadow: 0 0 12px var(--nav-blue);
+        align-items: center;
+        padding-top: 20px;
+        transition: all 1s linear .3s;
+    }
+
+    .services-container .services-icon{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background-color: var(--light-blue);
+        font-size: 30px;
+        margin-bottom: 10px;
+        text-align: center;
+        margin-left: 90px;
+    }
+
+    .services-container .service p{
+        font-size: 20px;
+        padding: 5px;
+    }
+    
+
+    #agent h1{
+        font-size: 35px;
+    }
+
+    #agent h2{
+        font-size: 25px;
+    }
+
+    .agent-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .agent-container .content-box h3{
+        font-size: 26px;
+        padding-top: 35px;
+    }
+
+    .agent-container .content{
+        display: flex;
+        flex-direction: column;
+    }
+    .agent-container .content-box{
+        width: 300px;
+        height: 200px;
+        margin: 20px;
+        border-radius: 15px;
+    }
+    
+    #agent p{
+        font-size: 20px;
+        padding: 10px;
+    }
+    .agent-container .content-image{
+        width: 400px;
+    }
+
+    .agent-container .content-image img{
+        width: 100%;
+    }
+
+    #agent button{
+        font-size: 25px;
+        padding: 10px 0;
+    }
+
+    #agent button a{
+        font-size: 30px;
+        padding: 20px;
+    }
+
+    #agent button a:hover{
+        background-color: #4169e1;
+        color: #fff;
+        border-radius: 8px;
+    }
+}
