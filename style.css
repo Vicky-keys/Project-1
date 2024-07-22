@@ -378,3 +378,99 @@ body{
     color: var(--yellow-color);
     font-weight: 400;
 }
+
+/* SERVICE-SECTION */
+
+.services{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#services{
+    color: var(--black-color);
+    font-family: 'Times New Roman', Times, serif;
+    padding: 60px 0;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#services h2{
+    color: var(--nav-blue);
+    font-weight: 600;
+    font-size: 30px;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+}
+
+#services h2::after{
+    content: "";
+    width: 50px;
+    height: 35px;
+    position: absolute;
+    top: -20px;
+    left: 0;
+    background: linear-gradient( var(--nav-blue), var(--white-color));
+    border-top-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+    z-index: -1;
+    padding-bottom: 10px;
+}
+
+#services h1{
+    font-size: 40px;
+}
+
+.services-container{
+    margin: 30px 130px;
+    display: grid;
+    grid-template-columns: repeat(4, 350px);
+    grid-template-rows: repeat(2, 350px);
+    gap: 40px;
+    cursor: pointer;
+    
+}
+
+
+
+.services-container .service{
+    width: 350px;
+    height: 350px;
+    border-radius: 8px;
+    background: var(--white-color);
+    box-shadow: 0 0 12px var(--nav-blue);
+    align-items: center;
+    padding-top: 20px;
+    transition: all 1s linear .3s;
+}
+
+.service:hover{
+    transform: scale(1.05);
+}
+
+.services-container .services-icon{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: var(--light-blue);
+    font-size: 70px;
+    margin-bottom: 30px;
+    text-align: center;
+    margin-left: 100px;
+}
+
+.services-container .services-icon i{
+    margin-top: 40px;
+}
+.services-container .service h3{
+    font-size: 30px;
+    color: var(--nav-blue);
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+
+.services-container .service p{
+    font-size: 20px;
+    padding: 10px;
+}
