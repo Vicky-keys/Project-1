@@ -474,3 +474,105 @@ body{
     font-size: 20px;
     padding: 10px;
 }
+
+/* AGENT-SECTION */
+#agent{
+    color: var(--white-color);
+    font-family: 'Times New Roman', Times, serif;
+    padding: 60px 0;
+    text-align: center;
+    margin: 0 auto;
+    background-color: var(--blue-color);
+}
+
+#agent h2{
+    color: blue;
+    font-weight: 600;
+    font-size: 30px;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    text-transform: uppercase;
+}
+
+#agent h2::after{
+    content: "";
+    width: 50px;
+    height: 35px;
+    position: absolute;
+    top: -20px;
+    left: 0;
+    background: linear-gradient( var(--nav-blue), var(--white-color));
+    border-top-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+    z-index: -1;
+    padding-bottom: 10px;
+}
+
+#agent h1{
+    font-size: 40px;
+}
+
+#agent p{
+    font-size: 30px;
+    padding: 10px;
+}
+
+.agent-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.agent-container .content{
+    display: grid;
+    grid-template-columns: repeat(2, 400px);
+    grid-template-rows: repeat(2, 300px);
+    gap: 15px;
+}
+.agent-container .content-box{
+    width: 400px;
+    height: 300px;
+    background: var(--white-color); 
+    box-shadow: 0 0 12px var(--black-color);
+    margin: 20px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.agent-container .content-box h3{
+    font-size: 25px;
+    color: var(--nav-blue);
+    padding-top: 50px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.agent-container .content-box p{
+    font-size: 18px;
+    padding: 15px;
+    color: #000;
+}
+
+#agent button{
+    background-color: var(--yellow-color);
+    color: var(--white-color);
+    border: none;
+    margin-top: 60px;
+    padding: 10px 0;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#agent button a{
+    color: var(--nav-blue);
+    text-decoration: none;
+    font-size: 40px;
+    padding: 20px;
+}
+
+#agent button a:hover{
+    background-color: #4169e1;
+    color: #fff;
+    border-radius: 8px;
+}
+
