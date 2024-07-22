@@ -263,9 +263,118 @@ body{
 
 .hero-section .content .image{
     width: 400px;
+    height: 600px;
     margin-left: 20px;
     margin-bottom: 40px;
 }
 .hero-section .content.image img{
     width: 100%;
+}
+
+/* FEATURES-SECTION */
+
+#features{
+    color: var(--black-color);
+    font-family: 'Times New Roman', Times, serif;
+    padding: 60px 0;
+    text-align: center;
+}
+
+#features h2{
+    color: var(--nav-blue);
+    font-weight: 600;
+    font-size: 30px;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+}
+
+#features h2::after{
+    content: "";
+    width: 50px;
+    height: 35px;
+    position: absolute;
+    top: -20px;
+    left: 0;
+    background: linear-gradient( var(--nav-blue), var(--white-color));
+    border-top-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+    z-index: -1;
+    padding-bottom: 10px;
+}
+
+#features h1{
+    font-size: 50px;
+}
+
+.features-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 50px auto;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.features{
+    text-align: left;
+    width: 50%;
+    padding: 0 15px;
+    flex-basis: 50%;
+}
+
+
+.features-image{
+    flex-basis: 50%;
+    margin: auto;
+    position: relative;
+}
+
+.features-image img{
+    width: 90%;
+    height: 100%;
+    border-radius: 10px;
+    position: relative;
+}
+
+
+.features h3{
+    color: var(--nav-blue);
+    text-align: left;
+    margin-bottom: 10px;
+    font-weight: 400;
+    font-size: 30px;
+}
+
+.features-description{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.features-icon{
+    width: 120px;
+    height: 50px;
+    padding-left: 8px;
+    border-radius: 8px;
+    color: var(--nav-blue);
+    border: 1px solid var(--nav-blue);
+    font-size: 30px;
+    line-height: 50px;
+
+}
+
+
+
+.features-text p{
+    padding: 0 24px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: initial;
+    font-size: 24px;
+}
+
+.features-text p span a{
+    color: var(--yellow-color);
+    font-weight: 400;
 }
