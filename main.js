@@ -37,7 +37,7 @@ function changeTheme(){
         icon.src = "images/darkmode.png";
         body.style.transition = '1.5s';
         body.style.background = '#fff';
-        service.style.background = '#fff';
+        service.style.background = '#d3d3d3';
         subtitle.style.color = '#fff';
         agentBgColor.style.background = '#1292d5';
     }
