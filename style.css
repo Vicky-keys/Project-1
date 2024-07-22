@@ -7,6 +7,7 @@
     --nav-blue: #4169e1;
     --light-blue: #1c9fe6;
 }
+
 *{
     margin: 0;
     padding: 0;
@@ -16,7 +17,7 @@
 body{
     background-color: #fff;
     width: 100%;
-   
+    
 }
 
 .wrapper{
